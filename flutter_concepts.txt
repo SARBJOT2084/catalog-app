@@ -1,0 +1,8 @@
+body in flutter
+everything in flutter is in widgets.
+return Scaffold(
+body:
+)
+AppBar() -> gives sidebar on top left 
+AppBar (title :Text("gives text"))
+material -> gives blue color to app by default 

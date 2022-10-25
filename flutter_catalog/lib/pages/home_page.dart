@@ -19,3 +19,27 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+/* 
+Widget is a return type 
+method 
+bringVegetables(int rupees)
+{
+  // take cycle
+  // go to sec 16 
+
+}
+// with default type 
+bringVegetables({int rupees=90})
+{
+  // take cycle
+  // go to sec 16 
+
+}
+// set parameter is required 
+bringVegetables({@required int rupees=90})
+{
+  // take cycle
+  // go to sec 16 
+
+}
+ */

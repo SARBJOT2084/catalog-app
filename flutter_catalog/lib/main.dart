@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
+import 'pages/home_page.dart';
+import 'pages/login_page.dart';
 
 // entry point
 void main() {
@@ -22,7 +22,17 @@ class MyApp extends StatelessWidget {
     // num temp = 30.5;
     // const p = 3.14579;
     return MaterialApp(
-      home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => HomePage(),
+        "/home": (context) => HomePage(),
+        "/Login": (context) => LoginPage(),
+      },
     );
   }
 }
